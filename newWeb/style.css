@@ -1,0 +1,196 @@
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: white;
+  background-color: black;
+  scroll-behavior: smooth;
+}
+
+/* Navbar */
+header.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #0b3d91; /* Dark Blue */
+  padding: 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header .logo {
+  color: black; /* Black */
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+header .nav-links {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+header .nav-links li {
+  margin: 0 1rem;
+}
+
+header .nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+header .nav-links a:hover {
+  color: black; /* Black */
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 100vh;
+  background: #0b3d91; /* Dark Blue */
+  color: white;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  animation: slide-in 1s ease-out;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  animation: fade-in 1.5s ease-out;
+}
+
+.hero .btn-primary {
+  margin-top: 2rem;
+  background: black; /* Black */
+  color: white;
+  padding: 0.8rem 1.5rem;
+  font-size: 1.2rem;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.hero .btn-primary:hover {
+  transform: scale(1.1);
+  background: #0b3d91; /* Highlight Hover */
+}
+
+/* Events Section */
+.events {
+  background: black; /* Black */
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.event-cards {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.event-card {
+  background: white;
+  color: black;
+  padding: 1.5rem;
+  border-radius: 10px;
+  width: 300px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.event-card:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Team Section */
+.team {
+  background: #0b3d91; /* Dark Blue */
+  padding: 3rem 1rem;
+}
+
+.team-cards {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.team-card {
+  text-align: center;
+  background: black; /* Black */
+  padding: 1.5rem;
+  border-radius: 10px;
+  color: white;
+  transition: transform 0.3s;
+}
+
+.team-card:hover {
+  transform: translateY(-10px);
+  background: #0b3d91; /* Highlight Hover */
+}
+
+/* Contact Section */
+.contact {
+  background: #0b3d91; /* Dark Blue */
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.contact input,
+.contact textarea {
+  width: 80%;
+  margin: 1rem auto;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 5px;
+  background: white;
+  color: black;
+}
+
+.contact button {
+  background: black; /* Black */
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.contact button:hover {
+  transform: scale(1.1);
+  background: #0b3d91; /* Highlight Hover */
+}
+
+/* Animations */
+@keyframes slide-in {
+  from {
+      opacity: 0;
+      transform: translateX(-50px);
+  }
+  to {
+      opacity: 1;
+      transform: translateX(0);
+  }
+}
+
+@keyframes fade-in {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
